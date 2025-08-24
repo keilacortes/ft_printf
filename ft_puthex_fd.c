@@ -6,7 +6,7 @@
 /*   By: kqueiroz <kqueiroz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/09 20:36:51 by kqueiroz          #+#    #+#             */
-/*   Updated: 2025/08/24 17:24:39 by kqueiroz         ###   ########.fr       */
+/*   Updated: 2025/08/24 18:28:01 by kqueiroz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ int	ft_puthex_fd(unsigned int n, char format, int fd)
 	int		count;
 	char	*base;
 
+	count = 0;
 	if (fd < 0)
 		return (0);
 	if (format == 'x')

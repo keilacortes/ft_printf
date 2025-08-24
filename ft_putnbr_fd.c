@@ -6,7 +6,7 @@
 /*   By: kqueiroz <kqueiroz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/31 22:31:11 by kqueiroz          #+#    #+#             */
-/*   Updated: 2025/08/24 17:24:49 by kqueiroz         ###   ########.fr       */
+/*   Updated: 2025/08/24 18:29:00 by kqueiroz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ int	ft_putnbr_fd(int n, int fd)
 		write(fd, "-2147483648", 11);
 		return (11);
 	}
+	count = 0;
 	if (n < 0)
 	{
 		count += ft_putchar_fd('-', fd);
