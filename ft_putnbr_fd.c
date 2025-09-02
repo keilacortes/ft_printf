@@ -6,7 +6,7 @@
 /*   By: kqueiroz <kqueiroz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/31 22:31:11 by kqueiroz          #+#    #+#             */
-/*   Updated: 2025/08/24 18:29:00 by kqueiroz         ###   ########.fr       */
+/*   Updated: 2025/09/02 19:32:39 by kqueiroz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int	ft_putnbr_fd(int n, int fd)
 		n *= -1;
 	}
 	if (n >= 10)
-		ft_putnbr_fd(n / 10, fd);
+		count += ft_putnbr_fd(n / 10, fd);
 	count += ft_putchar_fd((n % 10) + '0', fd);
 	return (count);
 }
