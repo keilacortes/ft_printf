@@ -6,7 +6,7 @@
 /*   By: kqueiroz <kqueiroz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/09 15:16:28 by kqueiroz          #+#    #+#             */
-/*   Updated: 2025/08/24 20:47:06 by kqueiroz         ###   ########.fr       */
+/*   Updated: 2025/09/02 20:46:35 by kqueiroz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ static int	check_format(char format, va_list args)
 	else if (format == 'u')
 		return (ft_putunsigned_fd(va_arg(args, unsigned int), fd));
 	else if (format == 'x' || format == 'X')
-		return (ft_puthex_fd(va_arg(args, unsigned long), format, fd));
+		return (ft_puthex_fd(va_arg(args, unsigned int), format, fd));
 	return (0);
 }
 
