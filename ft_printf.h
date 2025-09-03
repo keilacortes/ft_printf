@@ -6,14 +6,14 @@
 /*   By: kqueiroz <kqueiroz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/09 13:56:57 by kqueiroz          #+#    #+#             */
-/*   Updated: 2025/09/02 21:13:39 by kqueiroz         ###   ########.fr       */
+/*   Updated: 2025/09/03 17:43:44 by kqueiroz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
-# include <stdlib.h>
+# include <stdint.h>
 # include <stdarg.h>
 # include <unistd.h>
 
